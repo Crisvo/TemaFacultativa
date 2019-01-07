@@ -1,0 +1,70 @@
+﻿<Window x:Class="_TemaFCompilatoare.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_TemaFCompilatoare"
+        mc:Ignorable="d"
+        Title="LL1 Analizor" Height="450" Width="800">
+    <Grid Background="{DynamicResource {x:Static SystemColors.GradientInactiveCaptionBrushKey}}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="9*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="135*"/>
+            <ColumnDefinition Width="394*"/>
+            <ColumnDefinition Width="265*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox Name="BrowseTextBox" 
+                 TextWrapping="Wrap"
+                 Padding="5"                
+                 Text="File Path" 
+                 Margin="5"
+                 Grid.ColumnSpan="3" Background="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}"/>
+        <Button Name="BrowseButton"
+                Content="Browse" 
+                Grid.Column="2" 
+                Margin="5"
+                Click="BrowseButton_Click" Background="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}" BorderBrush="{DynamicResource {x:Static SystemColors.ActiveCaptionTextBrushKey}}" Foreground="Black"/>
+        <TextBox Name ="GramarTextBox"
+                 Grid.Row="1"
+                 Grid.ColumnSpan="2"
+                 Grid.RowSpan="2"
+                 Margin="5"
+                 Padding="5" Background="White"/>
+        <StackPanel
+            Grid.Column="2"
+            Grid.Row="1" Cursor="Cross" Background="{DynamicResource {x:Static SystemColors.GradientInactiveCaptionBrushKey}}">
+            <Button Name="InitiateLL1Button"
+                    Content="Initiate LL1"
+                    Margin="5"
+                    Height="33"
+                    Click="InitiateLL1Button_Click" Background="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}"/>
+            <Button Name="ShowGramarButton"
+                    Content="Show gramar rules"
+                    Margin="5 0 5 5"
+                    Height="33"
+                    Click="ShowGramarButton_Click" Background="{DynamicResource {x:Static SystemColors.HotTrackBrushKey}}"/>
+            <Button Name="ShowDirSymb"
+                    Content="Show director symbols"
+                    Margin="5 0 5 5"
+                    Height="33"
+                    Click="ShowDirSymb_Click" Background="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}"/>
+            <Button Name="ExecudeCodeButton"
+                    Content="Execute code"
+                    Margin="5 0 5 5"
+                    Height="33"
+                    Click="ExecudeCodeButton_Click" Background="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}"/>
+            <Button Name="ShowCodeButton"
+                    Content="Show generated code"
+                    Margin="5 0 5 5"
+                    Height="33"
+                    Click="ShowCodeButton_Click" Background="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}"/>
+        </StackPanel>
+        <Image Grid.Column="2"
+               Grid.Row="2" 
+               Source="Images/signature5c30d036630cb.png"/>
+    </Grid>
+</Window>

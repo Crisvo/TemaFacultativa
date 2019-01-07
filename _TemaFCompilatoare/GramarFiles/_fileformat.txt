@@ -1,0 +1,10 @@
+﻿Simbolul de start
+Multimea neterminalelor
+Multimea terminalelor
+Numarul regulilor de productie
+Regulile de productie
+
+
+Nota: O regula de productie este de forma:
+		N : N1 t1 t2 N2 N (un exemplu, unde N, N1 N2 - neterminale
+                                            t1, t2 - terminale)
