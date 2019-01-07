@@ -7,7 +7,7 @@ using System.Text;
 using System.Windows;
 
 namespace _TemaFCompilatoare.CompilerNS
-{
+{ 
     /// <summary>
     /// This clas compiles the given code
     /// </summary>

@@ -88,7 +88,7 @@ namespace _TemaFCompilatoare.Gramars
         /// Main method for the process that removes the rules with the same begining
         /// </summary>
         public void RemoveSameBeging()
-        {
+        { 
             int n = productionRules.Count;
             for(var index = 0; index < n; index++)
             {

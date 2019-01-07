@@ -16,7 +16,7 @@
             <ColumnDefinition Width="135*"/>
             <ColumnDefinition Width="394*"/>
             <ColumnDefinition Width="265*"/>
-        </Grid.ColumnDefinitions>
+        </Grid.ColumnDefinitions> 
         <TextBox Name="BrowseTextBox" 
                  TextWrapping="Wrap"
                  Padding="5"                

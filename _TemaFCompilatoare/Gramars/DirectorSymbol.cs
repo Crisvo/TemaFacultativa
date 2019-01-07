@@ -25,7 +25,7 @@ namespace _TemaFCompilatoare.Gramars
         #region Members
         public Gramar gramar {get; set;}
         #endregion
-
+         
         #region Methods
         #region Public Methods
         /// <summary>

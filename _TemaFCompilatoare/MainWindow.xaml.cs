@@ -13,7 +13,7 @@ namespace _TemaFCompilatoare
         public MainWindow()
         {
             InitializeComponent();
-        }
+        } 
 
         #region Members
         private Gramar _gramar = null;

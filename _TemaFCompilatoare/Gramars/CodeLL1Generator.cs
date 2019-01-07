@@ -400,7 +400,7 @@ namespace _TemaFCompilatoare.Gramars
 
         #region Members
         private Gramar _gramar;
-        private int[,] _matrix;
+        private int[,] _matrix; 
         #endregion
     }
 }

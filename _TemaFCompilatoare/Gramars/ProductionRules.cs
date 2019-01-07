@@ -13,7 +13,7 @@ namespace _TemaFCompilatoare.Gramars
         public List<string> Rule { get; set; }
         public List<string> DirectorSymbol { get; set; }
         #endregion
-
+         
         #region Methods
         public bool IsLeftRecursion()
         {
